@@ -8,13 +8,13 @@
 }
 
 body {
-  background: #343541;
+  background: #2c3330;
 }
 
 #app {
   width: 100vw;
   height: 100vh;
-  background: #343541;
+  background: linear-gradient(to bottom right, #5ecb88 20%,#575e5b 80%);
 
   display: flex;
   flex-direction: column;
@@ -50,7 +50,7 @@ body {
 }
 
 .ai {
-  background: #40414F;
+  background: #29634a;
 }
 
 .chat {
@@ -117,17 +117,19 @@ form {
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
-  background: #40414F;
-
+  background: linear-gradient(to bottom right,#8d8686,#80cb7c);
+  border-radius: 18px;
   display: flex;
+  border-color: white;
+
   flex-direction: row;
   gap: 10px;
 }
 
 textarea {
   width: 100%;
-
-  color: #fff;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
   font-size: 18px;
 
   padding: 10px;
@@ -135,6 +137,9 @@ textarea {
   border-radius: 5px;
   border: none;
   outline: none;
+}
+textarea::placeholder{
+  color: black;
 }
 
 button {
